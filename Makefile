@@ -6,7 +6,8 @@ SCRIPT_PATH :=  ./src
 TEMPLATE_PATH := ./meta/template
 
 TMP_DIR := /tmp/MFUIG/
-END_MSG_FILE := $(TEMP_DIR)/end-messages.txt
+END_MSG_FILE := /tmp/MFUIG/end-messages.txt
+export END_MSG_FILE
 
 .PHONY: default help new
 
@@ -18,9 +19,13 @@ help:
 new:
 	./meta/new $(SCRIPT_PATH) $(TEMPLATE_PATH)
 	
+test: preinstaller
+	./endMsgTest
+	cat $(END_MSG_FILE)
+
 preinstaller:
 	mkdir -p $(TMP_DIR)
 	touch $(END_MSG_FILE)
-	export END_MSG_FILE = $(END_MSG_FILE)
+
 
 	

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+export SOURCE_="none"
+export TITLE_=${0##*/}
+./meta/installingHeader
+
+
+# installing minecraft via apt download
+wget -P /tmp https://launcher.mojang.com/download/Minecraft.deb
+sudo apt install /tmp/Minecraft.deb
+rm /tmp/Minecraft.deb
+
+
+# Installing minecraft via snap 
+# sudo apt install snapd
+# snap install minecraft-launcher-ot

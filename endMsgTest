@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo "into file" >> $END_MSG_FILE
