@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://github.com/nvm-sh/nvm#installing-and-updating"
-./meta/installingHeader $SOURCE_ ${0##*/}
+export SOURCE_="https://github.com/nvm-sh/nvm#installing-and-updating"
+export TITLE_=${0##*/}
+./meta/installingHeader
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 

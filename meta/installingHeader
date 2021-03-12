@@ -1,5 +1,7 @@
 
 #!/usr/bin/env bash
 
-echo "\n########## Installing $2 ############"
-echo "Source: $1\n"
+echo " "
+echo "########## Installing $TITLE_ ############"
+echo "Source: $SOURCE_"
+echo " "

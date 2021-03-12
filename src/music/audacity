@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://example.com"
+export SOURCE_="none"
 
-./meta/installingHeader $SOURCE_ ${0##*/}
+export TITLE_=${0##*/}
+./meta/installingHeader

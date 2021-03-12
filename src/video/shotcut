@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://www.shotcut.org/"
+export SOURCE_="https://www.shotcut.org/"
 
 DOWNLOAD_="https://github.com/mltframework/shotcut/releases/download/v21.02.27/shotcut-linux-x86_64-210227.AppImage"
 
-./meta/installingHeader $SOURCE_ ${0##*/}
+export TITLE_=${0##*/}
+./meta/installingHeader
 
 ./meta/installAppImage $DOWNLOAD_

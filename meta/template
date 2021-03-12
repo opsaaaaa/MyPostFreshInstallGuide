@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://example.com"
-./meta/installingHeader $SOURCE_ ${0##*/}
+export SOURCE_="none"
+export TITLE_=${0##*/}
+./meta/installingHeader
 
 # install the package and set up configs
 

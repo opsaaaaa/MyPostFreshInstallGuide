@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://obsproject.com/wiki/install-instructions#linux"
+export SOURCE_="https://obsproject.com/wiki/install-instructions#linux"
 
-./meta/installingHeader $SOURCE_ ${0##*/}
+export TITLE_=${0##*/}
+./meta/installingHeader
 
 
 sudo add-apt-repository ppa:obsproject/obs-studio

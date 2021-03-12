@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://tldr.sh/"
-./meta/installingHeader $SOURCE_ ${0##*/}
+export SOURCE_="https://tldr.sh/"
+export TITLE_=${0##*/}
+./meta/installingHeader
 
 sudo apt install htop

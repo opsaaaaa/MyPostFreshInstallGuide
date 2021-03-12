@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://github.com/TheAssassin/AppImageLauncher"
+export SOURCE_="https://github.com/TheAssassin/AppImageLauncher"
 
-./meta/installingHeader $SOURCE_ ${0##*/}
+export TITLE_=${0##*/}
+./meta/installingHeader
 
 sudo add-apt-repository ppa:appimagelauncher-team/stable
 sudo apt update

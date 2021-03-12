@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-SOURCE_="https://github.com/ohmyzsh/ohmyzsh"
-./meta/installingHeader $SOURCE_ ${0##*/}
+export SOURCE_="https://github.com/ohmyzsh/ohmyzsh"
+export TITLE_=${0##*/}
+./meta/installingHeader
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
