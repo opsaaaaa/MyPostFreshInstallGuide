@@ -6,3 +6,4 @@ SOURCE_="https://example.com"
 sudo apt install code
 
 # copy vscode configs
+# install extentions
