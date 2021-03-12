@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+mkdir -p $TMP_DIR
+touch $END_MSG_FILE

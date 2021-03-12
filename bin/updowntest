@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+./meta/up
+
+echo "thing 1" >> $END_MSG_FILE
+echo "thing 2"
+
+./meta/down
+

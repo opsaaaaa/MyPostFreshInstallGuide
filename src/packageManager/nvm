@@ -6,7 +6,7 @@ export TITLE_=${0##*/}
 
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
-echo "Check .zshrc .bashrc .profile .bash_profile for nvm export."
+echo "NVM: Check the rc files(.zshrc .bashrc .profile .bash_profile) for the nvm export." >> $END_MSG_FILE
 
 nvm install --lts
 

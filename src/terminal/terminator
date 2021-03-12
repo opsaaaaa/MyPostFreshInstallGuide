@@ -6,4 +6,4 @@ export TITLE_=${0##*/}
 
 sudo apt install terminator
 
-echo "remember to set profile 'run as login shell'."
+echo "Terminator: Remember to set 'Run command as a login shell'." >> $END_MSG_FILE

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cat $END_MSG_FILE
+rm $END_MSG_FILE
