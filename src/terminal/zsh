@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH"
+./meta/installingHeader $SOURCE_ ${0##*/}
+
+sudo apt install zsh
+
+# copy zsh configs

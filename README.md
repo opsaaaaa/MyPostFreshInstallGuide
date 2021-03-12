@@ -1,12 +1,10 @@
 # My Fresh Ubuntu Install Guide
 
-O boi, here I am again with another fresh install. 
+O boi, here I am again with another fresh install. Time to install and configure all my software for the 300th time. WoooHoo.
 
-Time to install all my software for the 300th time.
+This repo will help you install **EVERYTHING** in **1** ~~easy~~ step.
 
-
-
-## Setp 0 - Install a type of Ubuntu
+## Setp -2 | Install a type of Ubuntu
 
 Downlaods: 
 [Pop_os](https://pop.system76.com/) | 
@@ -20,7 +18,7 @@ Guides:
 
 
 
-## Setp 1 - Install Git
+## Setp -1 | Install Git
 
 ```
 $ sudo apt install git-all
@@ -42,7 +40,7 @@ $ ssh-keygen
 $ cat ~/.ssh/id_rsa.pub 
 ```
 
-## Step 2 - Clone this repo
+## Step 0 | Clone this repo
 
 Make a code directory.
 ```
@@ -55,7 +53,7 @@ Copy this repository.
 $ git clone git@github.com:opsaaaaa/installscripts.git
 ```
 
-## Setp 3 - run install scripts (pending)
+## Setp 1 | run install scripts (pending)
 
 Reload this page untill somthing shows up here.
 

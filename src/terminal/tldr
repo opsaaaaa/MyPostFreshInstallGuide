@@ -3,4 +3,5 @@
 SOURCE_="https://tldr.sh/"
 ./meta/installingHeader $SOURCE_ ${0##*/}
 
-sudo apt install htop
+npm install -g tldr
+
