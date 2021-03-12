@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+echo -n "Group: "
+read group
+
+echo -n "Name: "
+read name
+
+file_=$1/$group/$name
+folder_=$1/$group/
+
+mkdir -p $folder_
+
+cp $2 $file_
+
+chmod u+x $file_ 

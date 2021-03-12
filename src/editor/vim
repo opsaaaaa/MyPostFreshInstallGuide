@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://example.com"
+./meta/installingHeader $SOURCE_ ${0##*/}
+
+sudo apt install vim
+
+# copy any vim configs here

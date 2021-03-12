@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://example.com"
+
+./meta/installingHeader $SOURCE_ ${0##*/}

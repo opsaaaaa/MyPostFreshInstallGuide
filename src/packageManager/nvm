@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://github.com/nvm-sh/nvm#installing-and-updating"
+./meta/installingHeader $SOURCE_ ${0##*/}
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
+echo "Check .zshrc .bashrc .profile .bash_profile for nvm export."
+
+nvm install --lts
+

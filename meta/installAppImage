@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+APP_FOLDER=~/Applications
+
+wget -P $APP_FOLDER $1
+
+chmod -R u+x $APP_FOLDER

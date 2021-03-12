@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://example.com"
+./meta/installingHeader $SOURCE_ ${0##*/}
+
+sudo apt install code
+
+# copy vscode configs

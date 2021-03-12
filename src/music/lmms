@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://example.com"
+
+DOWNLOAD_="https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-linux-x86_64.AppImage"
+
+./meta/installingHeader $SOURCE_ ${0##*/}
+
+./meta/installAppImage $DOWNLOAD_

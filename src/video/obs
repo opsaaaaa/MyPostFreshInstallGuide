@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://obsproject.com/wiki/install-instructions#linux"
+
+./meta/installingHeader $SOURCE_ ${0##*/}
+
+
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+
+sudo apt install ffmpeg v4l2loopback-dkms obs-studio
