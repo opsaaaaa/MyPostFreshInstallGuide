@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SOURCE_="https://example.com"
+./meta/installingHeader $SOURCE_ ${0##*/}
+
+sudo apt install terminator
+
+echo "remember to set profile 'run as login shell'."
