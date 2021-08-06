@@ -1,0 +1,46 @@
+1 0 0
+0 1 0
+0 0 1
+
+
+wrong way
+1 0 0
+1 0.33333 0
+0 0 1
+
+1 0 0 1 0.33333 0 0 0 1
+
+
+
+
+0.33333 0 0
+1 1 0
+0 0 1
+
+0.33333 0 0 1 1 0 0 0 1
+
+xinput set-prop 17 --type=float "Coordinate Transformation Matrix" 0.33333 0 0 1 1 0 0 0 1
+
+https://en.wikipedia.org/wiki/Transformation_matrix#/media/File:2D_affine_transformation_matrix.svg
+
+
+xinput list
+...
+⎜   ↳ Tablet Monitor Pen Pen (0)              	id=17	[slave  pointer  (2)]
+...
+
+xinput set-prop 17 --type=float "Coordinate Transformation Matrix" 1 0 0 1 0.33333 0 0 0 1
+
+1 0 0
+1 0.33333 0
+0 0 1
+
+
+
+0.33333 0 0
+0 1 0
+0 0 1
+
+xinput set-prop 17 --type=float "Coordinate Transformation Matrix" 0.33333 0 0 0 1 0 0 0 1
+
+
