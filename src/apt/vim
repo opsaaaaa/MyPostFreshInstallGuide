@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+export SOURCE_="none"
+export TITLE_=${0##*/}
+./meta/installingHeader
+
+sudo apt -y install vim
+
+git config --global core.editor vim

@@ -5,4 +5,4 @@ export SOURCE_="none"
 export TITLE_=${0##*/}
 ./meta/installingHeader
 
-sudo apt install simplescreenrecorder
+sudo apt -y install simplescreenrecorder

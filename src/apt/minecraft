@@ -7,7 +7,7 @@ export TITLE_=${0##*/}
 
 # installing minecraft via apt download
 wget -P /tmp https://launcher.mojang.com/download/Minecraft.deb
-sudo apt install /tmp/Minecraft.deb
+sudo apt -y install /tmp/Minecraft.deb
 rm /tmp/Minecraft.deb
 
 

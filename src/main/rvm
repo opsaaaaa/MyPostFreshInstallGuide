@@ -11,5 +11,7 @@ gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703
 echo "RVM: Remember to set 'Run command as a login shell' in your terminal." >> $END_MSG_FILE
 echo "RVM: And reboot Your Terminal" >> $END_MSG_FILE
 
+source /home/sean/.rvm/scripts/rvm
+
 # install the package and set up configs
 

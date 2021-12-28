@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+# echo $PATH
+
+# echo $FILE
+
+# pwd
+
+# echo $0
+ 
+# full_path=$(realpath $0)
+# echo $full_path
+ 
+# dir_path=$(dirname $full_path)
+# echo $dir_path
+
+echo ./src/*

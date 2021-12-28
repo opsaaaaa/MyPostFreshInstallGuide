@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+export SOURCE_="none"
+export TITLE_=${0##*/}
+./meta/installingHeader
+
+# install the package and set up configs
+
+cp ./files/.zshrc ~/
+cp ./files/.bashrc ~/
+cp ./files/.vimrc ~/

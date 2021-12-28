@@ -4,6 +4,6 @@ export SOURCE_="none"
 export TITLE_=${0##*/}
 ./meta/installingHeader
 
-sudo apt install terminator
+sudo apt -y install terminator
 
 echo "Terminator: Remember to set 'Run command as a login shell'." >> $END_MSG_FILE

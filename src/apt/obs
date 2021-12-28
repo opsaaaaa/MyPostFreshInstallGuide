@@ -6,7 +6,7 @@ export TITLE_=${0##*/}
 ./meta/installingHeader
 
 
-sudo add-apt-repository ppa:obsproject/obs-studio
+sudo -y add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
 
-sudo apt install ffmpeg v4l2loopback-dkms obs-studio
+sudo -y apt install ffmpeg v4l2loopback-dkms obs-studio

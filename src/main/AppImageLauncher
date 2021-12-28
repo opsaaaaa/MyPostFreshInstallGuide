@@ -5,8 +5,12 @@ export SOURCE_="https://github.com/TheAssassin/AppImageLauncher"
 export TITLE_=${0##*/}
 ./meta/installingHeader
 
-sudo add-apt-repository ppa:appimagelauncher-team/stable
+sudo -y add-apt-repository ppa:appimagelauncher-team/stable
 sudo apt update
-sudo apt install appimagelauncher
+sudo -y apt install appimagelauncher
 mkdir ~/Applications
+
+for f in ./src/appimage/*; do
+  bash "$f" 
+done
 

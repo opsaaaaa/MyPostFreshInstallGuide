@@ -5,6 +5,13 @@ export export TITLE_=${0##*/}
 
 ./meta/installingHeader
 
-sudo apt install zsh
+sudo apt -y install zsh
 
 # copy zsh configs
+
+for f in ./src/zsh/*; do
+  bash "$f" 
+done
+
+cp ./files/.zshrc ~/
+

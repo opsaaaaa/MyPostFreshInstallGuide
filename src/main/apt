@@ -4,7 +4,9 @@ export SOURCE_="none"
 export TITLE_=${0##*/}
 ./meta/installingHeader
 
-sudo apt install code
+# install the package and set up configs
 
-# copy vscode configs
-# install extentions
+for f in ./src/apt/*; do
+  bash "$f" 
+done
+
