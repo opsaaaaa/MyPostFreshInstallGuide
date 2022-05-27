@@ -51,29 +51,45 @@ tldr man
 
 ### setup git properly with ssh keys.
 - [bitsrc-multi-git-accounts](https://blog.bitsrc.io/how-to-use-multiple-git-accounts-378ead121235)
+- [medium/@geeky_sh multi-git-accounts](https://medium.com/@geeky_sh/manage-multiple-git-accounts-on-a-single-machine-d49d710ec229)
+
 ```
 mkdir ~/.shh && cd ~/.ssh
 ssh-keygen -t rsa -C me@example.com -f id_rsa_mygituser
 ssh-keygen -t rsa -C me@work.com -f id_rsa_workgituser
-ssh-add ~/.ssh/id_rsa_mygituser
-ssh-add ~/.ssh/id_rsa_workgituser
 vim config
 ```
 ```
-Host github.com
+# Personal account
+Host github.com-myuser
   HostName github.com
+  PreferredAuthentications publickey
   User git
-  IdentityFile ~/.ssh/your-ssh-public-id
-Host github.com-work
+  IdentityFile ~/.ssh/id_rsa_myuser
+
+# Work User account domain
+Host github.com-workuser
   HostName github.com
+  PreferredAuthentications publickey
   User git
-  IdentityFile ~/.ssh/your-work-ssh-public-id
+  IdentityFile ~/.ssh/id_rsa_workuser
+
+# Work Org domain
+Host github.com-WorkOrgLLC
+  HostName github.com
+  PreferredAuthentications publickey
+  User git
+  IdentityFile ~/.ssh/id_rsa_workuser
 ```
 [SSH key github](settings/keys)
 ```
 pbcopy < id_rsa_mygituser.pub
 ...
 pbcopy < id_rsa_workgituser.pub
+```
+```
+ssh-add ~/.ssh/id_rsa_mygituser
+ssh-add ~/.ssh/id_rsa_workgituser
 ```
 
 ## GUI software
