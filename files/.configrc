@@ -1,0 +1,19 @@
+# node stuff
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+# add android studio to path
+export PATH="$PATH:./bin"
+
+## RVM
+PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH"
+[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
+
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:/home/sean/.rvm/gems/ruby-3.0.0/bin"
+
+export EDITOR='vim'
+export VISUAL='vim'
+

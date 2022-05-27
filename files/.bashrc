@@ -116,18 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source "$HOME/.configrc"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# export software downlaods
-export PATH="$PATH:$HOME/Downloads/software"
-
-# add android studio to path
-export PATH="$PATH:./bin"
-
-export EDITOR='vim'
-export VISUAL='vim'
