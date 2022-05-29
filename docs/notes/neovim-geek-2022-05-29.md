@@ -11,12 +11,24 @@ author: Opsaaaaa
 The idea of copying peoples configs is without understanding them annoys me.
 So this is a little bit about useful neovim features.
 
+- TODO: Read `:h options`.
+- TODO: Look/brows thought `:tab h` and `:tab h nvim`.
+
+
 ## Conquer Of Completeion COC.nvim
 
 Code completeion for nvim
 
 - [coc.nvim](https://github.com/neoclide/coc.nvim)
-- 
+
+- TODO: Give this propper attention and set it up with the langs I use most.
+- TODO: Look at the other big completion plugin?
+
+- [coc.nvim/wiki/Language-servers](https://github.com/neoclide/coc.nvim/wiki/Language-servers)
+- [coc.nvim/wiki/Using-coc-extensions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)
+- [coc.nvim/wiki/Using-the-configuration-file](https://github.com/neoclide/coc.nvim/wiki/Using-the-configuration-file)
+
+
 
 ## System Clipboard
 
@@ -150,6 +162,21 @@ The cterm colors take a 3 digit number. A 256 color code?
 Anyway the cterm colors are much harder to edit on the fly.
 If you're really into custom colors I would find some tool to help yourself out.
 
+
+## Links
+
+- [rafi/awesome-vim-colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
+- [ap/vim-css-color](https://github.com/ap/vim-css-color)
+- [cloudhead/neovim-fuzzy](https://github.com/cloudhead/neovim-fuzzy)
+- [coc.nvim](https://github.com/neoclide/coc.nvim)
+- [ruslan-savina/spelling](https://github.com/ruslan-savina/spelling)
+
+
+
+- https://github.com/rafi/awesome-vim-colorschemes
+- 
+-
+-
 
 
 
