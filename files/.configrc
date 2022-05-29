@@ -1,3 +1,9 @@
+
+
+## RVM
+#PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH"
+[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
+
 # node stuff
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -5,9 +11,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # add android studio to path
 export PATH="$PATH:./bin"
 
-## RVM
-PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH"
-[ -s ${HOME}/.rvm/scripts/rvm ] && source ${HOME}/.rvm/scripts/rvm
 
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
@@ -16,4 +19,8 @@ PATH="$GEM_HOME/bin:$HOME/.rvm/bin:$PATH"
 
 export EDITOR='vim'
 export VISUAL='vim'
+
+export PAGER=“most”
+alias tldr="man -M ~/.tldr"
+
 
