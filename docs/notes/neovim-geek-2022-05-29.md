@@ -11,8 +11,11 @@ author: Opsaaaaa
 The idea of copying peoples configs is without understanding them annoys me.
 So this is a little bit about useful neovim features.
 
-- TODO: Read `:h options`.
-- TODO: Look/brows thought `:tab h` and `:tab h nvim`.
+
+### TODO:
+- Read `:h options`.
+- Look/brows thought `:tab h` and `:tab h nvim`.
+- Try out spelling sugestions with fzf articale: [vim-spelling-suggestions-fzf](https://coreyja.com/vim-spelling-suggestions-fzf/)
 
 
 ## Conquer Of Completeion COC.nvim
