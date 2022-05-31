@@ -10,6 +10,11 @@ author: Opsaaaaa
 
 ## Terminal Junkie
 
+### 0 Install a better temnial.
+
+- [Iterm2](https://iterm2.com/index.html)
+
+
 ### 1. install home brew:
 - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - [brew.sh](https://brew.sh)
